@@ -1,0 +1,10 @@
+Entities:
+	Language
+	Data types (Double, float, long, string)
+	Integrated syntax (for loops, while loops, list comprehension, try/catch blocks, etc.)
+	Hardware
+	APIs (a lot can be used with multiple languages)
+	Runtype (compile, virtually compiled, line-by-line
+	OS
+	Components (Class, package, namespace, etc. Each language has multiple components and many components will have more than one language.
+	Engines
