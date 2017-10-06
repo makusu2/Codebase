@@ -1,10 +1,26 @@
 Entities:
 	Language
+		
 	Data types (Double, float, long, string)
+		Many-to-Many with Language
 	Integrated syntax (for loops, while loops, list comprehension, try/catch blocks, etc.)
+		Many-to-many with Language
 	Hardware
+		Many-to-Many with Language
+		Many-to-oneOrMany with OS
 	APIs (a lot can be used with multiple languages)
-	Runtype (compile, virtually compiled, line-by-line
+		Many-to-many with Language
+		Many-to-many with OS
+		One-to-one with Engine
+	Runtype (compile, virtually compiled, line-by-line)
+		One-to-many with Language
 	OS
+		Many-to-many with Language
+		Many-to-many with API
+		Optional many-to-many with Engine
 	Components (Class, package, namespace, etc. Each language has multiple components and many components will have more than one language.
-	Engines
+		Many-to-many with Language
+	Engine
+		Many-to-many with Language
+		Optional many-to-many with OS
+		
