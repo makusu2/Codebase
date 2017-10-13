@@ -23,4 +23,11 @@ Entities:
 	Engine
 		Many-to-many with Language
 		Optional many-to-many with OS
-		
+
+Weak entity types:
+	Language - Engine: API
+	OS - Hardware: Kernel
+	Language - DataType: Memory block (maybe)
+	Language - IntegratedSyntax: Compiler (maybe)
+	Language - OS: Compiler (maybe)
+	OS - Engine: EngineExecutible (but this one would be surrounded by "one" intead of "many"
