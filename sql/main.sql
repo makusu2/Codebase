@@ -23,8 +23,9 @@ create table language_t(
 create table datatype_t(
 	datatype_uuid 				int not null,
 	language_uuid				int,
+	datatype_name				varchar(20),
 	datatype_numbytes			int,
-	datatype_englishequiv       varchar(15),
+	datatype_englishequiv       varchar(30),
 	
 	constraint datatype_pk primary key (datatype_uuid),
 	constraint datatype_fk1 foreign key (language_uuid) references language_t(language_uuid)
@@ -33,8 +34,9 @@ create table datatype_t(
 create table component_t(
 	header_uuid					int not null,
 	language_uuid				int,
-	component_tier				varchar(10),
+	component_tier				int,
 	component_canbeinstantiated	varchar(5),
+	component_name				varchar(20),
 	
 	constraint component_pk primary key (header_uuid),
 	constraint component_fk1 foreign key (language_uuid) references language_t(language_uuid)
@@ -93,7 +95,7 @@ create table api_t(
 	
 create table hardware_t(
 	hardware_mtm					int not null,
-	hardware_acpi					int,
+	hardware_acpi					varchar(5),
 	
 	constraint hardware_pk primary key (hardware_mtm)
 	);
