@@ -3,6 +3,7 @@ insert into language_t values
 (2,"c","c","compiled"),
 (3,"c++","cpp","compiled"),
 (4,"c#","cs","compiled");
+(5,"java","java","compiled");
 
 insert into datatype_t values
 (10,1,"Generic",1000000,"Anything"),
@@ -32,6 +33,14 @@ insert into datatype_t values
 (46,4,"long double",10,"Real number"),
 (47,4,"null",0,"No value"),
 (48,4,"byte",1,"Very small integer");
+(50,5,"int",4,"Whole number"),
+(51,5,"char",1,"Letter, number, or symbol"),
+(52,5,"short",2,"Small whole number"),
+(53,5,"long",4,"Whole number"),
+(54,5,"float",4,"Small real number"),
+(55,5,"double",8,"relatively small real number"),
+(56,5,"long double",10,"Real number"),
+(57,5,"null",0,"No value"),
 
 insert into component_t values
 (10,1,1,"false","script"),
@@ -64,6 +73,9 @@ insert into compiler_t values
 (4,10016299),
 (4,10131),
 (4,1704);
+(5,10016299),
+(5,10131),
+(5,1704);
 
 /*skipping memory block*/
 
